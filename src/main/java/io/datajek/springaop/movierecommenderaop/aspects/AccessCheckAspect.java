@@ -7,6 +7,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * This is powerful 
+ * Logging / Analytics / recovery 
+ * 
+ * Careful of not doing it
+ * 
+ * ***/
 @Aspect
 @Configuration
 public class AccessCheckAspect {
