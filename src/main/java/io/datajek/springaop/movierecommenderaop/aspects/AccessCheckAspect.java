@@ -21,6 +21,7 @@ public class AccessCheckAspect {
 	
 	 private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+//	 @Before("io.datajek.springaop.movierecommenderaop.aspects.JoinPointConfig.movieBeanPointcut()")
 	 @Before("execution(* io.datajek.springaop.movierecommenderaop.services.*.*(..))")
 	    public void userAccess(JoinPoint joinPoint) {
 	        logger.info("Intercepted method call: {}", joinPoint );
