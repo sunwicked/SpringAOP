@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Aspect
 @Configuration
 public class LoggingAspect {
+	
 	 private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@AfterReturning(value = "execution(* io.datajek.springaop.movierecommenderaop.*.*(..))",
